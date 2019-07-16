@@ -1,0 +1,89 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    min-height: 800px; /* min w min h do ogarniecia dokladnie poxniej*/
+    min-width: 500px;
+    background: rgb(69, 147, 227);
+    overflow: hidden;
+}
+
+/* kolor kostek rgb(252, 208, 75); */
+
+.screenArea {
+    text-align: center;
+}
+
+.gameSpace {
+    background: rgb(34, 111, 190);
+    margin-bottom: 4vh;
+    margin-top: 2vh;
+    height: 70vh;
+    min-width: 350px;
+    width: 35vw ;
+    min-height: 350px;
+    box-shadow: 10 15px #ab3c3c;
+    
+}
+
+.buttons {
+    bottom: 0px;
+}
+
+.arrowButtonLEFT {
+    padding: 7vh 7vh;
+    font-size: 4px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #cb4e4e;
+    border: none;
+    box-shadow: 0 15px #ab3c3c;
+  }
+
+  .arrowButtonLEFT:hover {background-color: #cb4e4e}
+
+  .arrowButtonLEFT:active {
+    box-shadow: 0 0px #ab3c3c;
+    transform: translateY(15px);
+  }
+
+  .arrowButtonSTOP {
+    margin: 2vh 2vh 2vh 2vh;
+    padding: 3vh 3vh;
+    font-size: 4px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #cb4e4e;
+    border: none;
+    box-shadow:  0 15px #ab3c3c;
+  }
+
+  .arrowButtonSTOP:hover {background-color: #cb4e4e}
+
+  .arrowButtonSTOP:active {
+    box-shadow: 0 0px #ab3c3c;
+    transform: translateY(15px);
+  }
+
+
+
+  .arrowButtonRIGHT {
+    padding: 7vh 7vh;
+    font-size: 4px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #cb4e4e;
+    border: none;
+    box-shadow: 0 15px #ab3c3c;
+  }
+
+  .arrowButtonRIGHT:hover {background-color: #cb4e4e}
+
+  .arrowButtonRIGHT:active {
+    box-shadow: 0 0px #ab3c3c;
+    transform: translateY(15px);
+  }
