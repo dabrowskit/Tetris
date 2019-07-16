@@ -5,6 +5,7 @@ body {
     min-width: 500px;
     background: rgb(69, 147, 227);
     overflow: hidden;
+    position: relative;
 }
 
 /* kolor kostek rgb(252, 208, 75); */
