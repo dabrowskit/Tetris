@@ -1,5 +1,6 @@
 html {
     overflow: hidden;
+    position: absolute;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
     min-width: 500px;
     background: rgb(69, 147, 227);
     overflow: hidden;
-    position: relative;
+    position: absolute;
 }
 
 /* kolor kostek rgb(252, 208, 75); */
@@ -26,8 +27,6 @@ body {
     min-width: 350px;
     width: 35vw ;
     min-height: 350px;
-    box-shadow: 10 15px #ab3c3c;
-    
 }
 
 .buttons {
