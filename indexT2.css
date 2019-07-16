@@ -13,9 +13,10 @@ body {
   align-items: center;
   justify-content: center;
   display: flex;
+  margin: 0;
 }
 
 
 .gameSpace {
-  background: rgb(34, 111, 190);
+  /* background: rgb(34, 111, 190); */ 
 }
