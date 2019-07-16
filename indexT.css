@@ -6,8 +6,8 @@ html {
 body {
    /* height: 100vh;
     width: 100vw; */
-    min-height: 200px; /* min w min h do ogarniecia dokladnie poxniej*/
-    min-width: 200px; /* min w min h do ogarniecia dokladnie poxniej*/
+    min-height: 20px; /* min w min h do ogarniecia dokladnie poxniej*/
+    min-width: 20px; /* min w min h do ogarniecia dokladnie poxniej*/
     background: rgb(69, 147, 227);
     overflow: hidden;
     height: 100%;
@@ -28,10 +28,10 @@ body {
     background: rgb(34, 111, 190);
     margin-bottom: 4vh;
     margin-top: 2vh;
-    height: 70vh;
-    min-width: 50px;/* min w min h do ogarniecia dokladnie poxniej*/
-    width: 35vw ;
-    min-height: 50px;/* min w min h do ogarniecia dokladnie poxniej*/
+    height: 70%;
+    min-width: 5px;/* min w min h do ogarniecia dokladnie poxniej*/
+    width: 35% ;
+    min-height: 5px;/* min w min h do ogarniecia dokladnie poxniej*/
 }
 
 .buttons {
