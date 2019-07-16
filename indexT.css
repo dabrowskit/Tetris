@@ -1,6 +1,6 @@
 html {
     overflow: hidden;
-    position: absolute;
+
 }
 
 body {
@@ -10,7 +10,7 @@ body {
     min-width: 200px; /* min w min h do ogarniecia dokladnie poxniej*/
     background: rgb(69, 147, 227);
     overflow: hidden;
-    position: absolute;
+
 }
 
 /* kolor kostek rgb(252, 208, 75); */
@@ -24,7 +24,7 @@ body {
     margin-bottom: 4vh;
     margin-top: 2vh;
     height: 70vh;
-    min-width: 150px;/* min w min h do ogarniecia dokladnie poxniej*/
+    min-width: 50px;/* min w min h do ogarniecia dokladnie poxniej*/
     width: 35vw ;
     min-height: 50px;/* min w min h do ogarniecia dokladnie poxniej*/
 }
