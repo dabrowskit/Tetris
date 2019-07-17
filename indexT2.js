@@ -2,10 +2,10 @@ const canvas = document.getElementById("gameCanvas");
 // canvas.width  = 0.9 * window.innerWidth;
 // canvas.height =  0.9 * window.innerHeight;
 const context = canvas.getContext('2d');
-canvas.width  = 300;
-canvas.height =  600;
-
-var scaleSize = 20;
+var scaleAdjust = 1.15;
+canvas.width  = 300*scaleAdjust;
+canvas.height =  400*scaleAdjust;
+var scaleSize = 20*scaleAdjust;
 
 context.scale(scaleSize, scaleSize);
 
@@ -43,12 +43,12 @@ function drawMatrix(matrix) {
         let yAxis = Math.floor(Math.random()*20);
 
             if (matrix[yAxis][xAxis] == 0) { 
-                context.fillStyle = "#ab3c3c";
+                context.fillStyle = "#4E3CAA";
                 context.fillRect(xAxis, yAxis, 1, 1);
                 matrix[yAxis][xAxis] = 2;
                 i += 1;
             } else if (matrix[yAxis][xAxis] == 1) {
-                context.fillStyle = "rgb(252, 208, 75)"; //no taki jak tla domyslnie
+                context.fillStyle = "#5DAC94"; //no taki jak tla domyslnie
                 context.fillRect(xAxis, yAxis, 1, 1);
                 i += 1;
            } else if (matrix[yAxis][xAxis] == 2) {
@@ -65,8 +65,21 @@ for (k=0;k<300;k++){
     });
 }
  
+// wykrywanie gestow na urzadzeniach mobilnych
+var myElement = document.getElementById('screenArea');
+var mc = new Hammer(myElement);
+var directionCatch;
+mc.on("swipeleft swiperight swipeup swipedown", function(ev) {
+    console.log(ev.type +" gesture detected.");
+    directionCatch = ev.type;
+    document.getElementById("generalInfo").innerHTML = directionCatch;
+});
+
+
 
  
+document.getElementById("generalInfo").innerHTML = directionCatch;
+
 
 
 
@@ -116,6 +129,5 @@ function draw() {
 
 
 */
-
 
 
