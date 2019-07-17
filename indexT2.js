@@ -65,20 +65,30 @@ for (k=0;k<300;k++){
     });
 }
  
-// wykrywanie gestow na urzadzeniach mobilnych
-var myElement = document.getElementById('screenArea');
-var mc = new Hammer(myElement);
+
+//wychwytywanie swpiow
 var directionCatch;
-mc.on("swipeleft swiperight swipeup swipedown", function(ev) {
-    console.log(ev.type +" gesture detected.");
+var myElement = document.getElementById('screenArea');
+// create a simple instance
+// by default, it only adds horizontal recognizers
+var mc = new Hammer(myElement);
+// let the pan gesture support all directions.
+// this will block the vertical scrolling on a touch-device while on the element
+mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+// listen to events...
+mc.on("swipeleft swiperight swipeup swipedown tap press", function(ev) {
     directionCatch = ev.type;
     document.getElementById("generalInfo").innerHTML = directionCatch;
 });
 
 
 
+
+
+
+
  
-document.getElementById("generalInfo").innerHTML = directionCatch;
+
 
 
 
